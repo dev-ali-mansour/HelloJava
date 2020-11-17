@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * HelloJava Android Application developed by: Ali Mansour
- * Copyright © 2020 Passy Co. All Rights Reserved.
+ * Copyright © 2020 YAT Learning Solutions. All Rights Reserved.
  * This file may not be redistributed in whole or significant part.
  * ----------------- HelloJava IS FREE SOFTWARE ------------------
  * https://www.alimansour.dev   |   dev.ali.mansour@gmail.com
@@ -135,6 +135,7 @@ public class Conditions {
 }
 
 /*
+Exercise 1:
 Authentication system
 1- Print Authentication system
 2- Please enter your user name:
