@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * HelloJava Android Application developed by: Ali Mansour
  * Copyright © 2020 YAT Learning Solutions. All Rights Reserved.
@@ -38,11 +40,17 @@ public class Operators {
 //        int result = (5 + 4) * 2;
 //        System.out.println(result);
 
-        String firstName = "Ahmed", lastName = "Ali";
-        int x = 0, y = 0;
-        int sum = x + y;
-        sum += 5; //  sum = sum + 5
-        sum *= 2;
-        System.out.println(sum);
+//        String firstName = "Ahmed", lastName = "Ali";
+//        int x = 0, y = 0;
+//        int sum = x + y;
+//        sum += 5; //  sum = sum + 5
+//        sum *= 2;
+//        System.out.println(sum);
+
+        Scanner scanner = new Scanner(System.in);
+        String x = scanner.next();
+        System.out.println(x.equals("admin"));
+
+
     }
 }
