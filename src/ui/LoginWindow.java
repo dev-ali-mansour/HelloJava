@@ -40,4 +40,6 @@ public class LoginWindow {
         return "***" + password + "###";
     }
 
+    // Todo explain protected access modifier after explaining inheritance
+
 }
