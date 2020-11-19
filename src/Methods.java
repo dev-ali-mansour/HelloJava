@@ -1,3 +1,5 @@
+
+
 /**
  * HelloJava Android Application developed by: Ali Mansour
  * Copyright © 2020 YAT Learning Solutions. All Rights Reserved.
@@ -7,6 +9,7 @@
  */
 
 public class Methods {
+    final static double PI = 3.14;
 
     public static void main(String[] args) {
         /*for (int i = 1; i <= 5; i++) {
@@ -29,21 +32,38 @@ public class Methods {
 //        car.intro();
 
         User user = new User("Adel", "Mahmoud", 45, "User", "password");
+//        User user2 = new User();
+//        User user3 = new User("Ahmed", "Ali");
+//        User user1 = new User("Mohamed", "Ahmed", 45, "m.ahmed", "123456");
+//        User user4 = new User("Salem", "Hamed", 50);
 
-        user.firstName = "Adel";
-        user.lastName = "Mahmoud";
-        user.age = 45;
-        user.userName = "user";
-        user.password = "password";
+//        System.out.println("User number: " + user.count);
 
-        String userName = user.getFullName();
-        System.out.println("Full name: " + userName);
-        System.out.println("Age: " + user.age);
-        if (user.login()) {
-            System.out.println("Welcome back " + userName);
-        } else {
-            System.out.println("Invalid login data!");
-        }
+//        System.out.println(User.getFullName('#'));
+
+//        user.firstName = "Adel";
+//        user.lastName = "Mahmoud";
+//        user.age = 45;
+//        user.userName = "user";
+//        user.password = "password";
+
+//        System.out.println(user.login("192.168.1.10"));
+
+//        String userName = user.getFullName();
+//        System.out.println("Full name: " + userName);
+//        System.out.println("Age: " + user.age);
+//        if (user.login()) {
+//            System.out.println("Welcome back " + userName);
+//        } else {
+//            System.out.println("Invalid login data!");
+//        }
+
+//        String fullName = user.getFullName('*');
+//        System.out.println(fullName);
+
+        System.out.println(calculateCircleArea(5.6));
+
+
     }
 
     /*static void welcomeUser() {
@@ -57,12 +77,15 @@ public class Methods {
         System.out.println("Welcome back " + userName);
     }*/
 
-    static int calculateFactorial(int num) {
+    /*static int calculateFactorial(int num) {
         int factorial = 1;
         for (int i = 2; i <= num; i++) {
             factorial *= i;
         }
         return factorial;
-    }
+    }*/
 
+    static double calculateCircleArea(double radius) {
+        return PI * radius * radius;
+    }
 }

@@ -11,10 +11,11 @@ public class HelloJava {
     public static void main(String[] names) {
         String greetings; // Variable declaration
         greetings = "Hello Java"; // Variable initialization
-        int age1,age2,age3;
+        int age1, age2, age3;
         age1 = 50;
         age2 = 40;
         age3 = 20;
+        age1 = 30;
         byte age = 25;
         int population = 250000;
         char gender = 'm';

@@ -12,6 +12,24 @@ public class User {
     int age;
     String userName;
     String password;
+    static int count = 0;
+
+    User() {
+        count++;
+    }
+
+    User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        count++;
+    }
+
+    User(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        count++;
+    }
 
     User(String firstName, String lastName, int age, String userName, String password) {
         this.firstName = firstName;
@@ -19,10 +37,19 @@ public class User {
         this.age = age;
         this.userName = userName;
         this.password = password;
+        count++;
     }
 
     String getFullName() {
         return firstName + " " + lastName;
+    }
+
+    String getFullName(char ch) {
+        return "" + ch + ch + " " + firstName + " " + lastName + " " + ch + ch;
+    }
+
+    static int getCount(){
+        return count;
     }
 
     int getAge() {
@@ -36,4 +63,14 @@ public class User {
             return false;
         }
     }
+
+    boolean login(String ipAddress) {
+        if (ipAddress.equals("192.168.1.10")) return false;
+        if (userName.equalsIgnoreCase("user") && password.equals("password")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
