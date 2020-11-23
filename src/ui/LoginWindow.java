@@ -36,6 +36,7 @@ public class LoginWindow {
         }
     }
 
+
     private String encrypt(String password) {
         return "***" + password + "###";
     }
